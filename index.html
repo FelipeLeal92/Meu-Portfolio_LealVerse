@@ -75,6 +75,37 @@
             transition: all 0.3s ease;
         }
 
+        /* Animações de fundo que reagem ao mouse */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(45, 168, 255, 0.8) 0%, rgba(10, 79, 255, 0.2) 70%);
+            pointer-events: none;
+        }
+
+        .floating-shape {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(45, 168, 255, 0.2) 0%, rgba(10, 79, 255, 0.05) 70%);
+            pointer-events: none;
+            animation: float 15s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
 </head>
 <body>
     

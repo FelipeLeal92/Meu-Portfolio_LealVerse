@@ -344,7 +344,64 @@
             flex-direction: column;
             align-items: center;
             gap: 30px;
-        }        
+        }    
+        
+        .about-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-4), var(--accent-3));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 4px solid var(--accent-1);
+            box-shadow: 0 0 20px var(--shadow-color);
+        }
+
+        .about-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-table {
+            background: var(--bg-card);
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid var(--border-color);
+            width: 100%;
+        }
+
+        .about-table h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--accent-1);
+            text-align: center;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .info-table tr {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .info-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .info-table td {
+            padding: 12px 0;
+            color: var(--text-secondary);
+        }
+
+        .info-table td:first-child {
+            font-weight: bold;
+            color: var(--text-primary);
+        }
     </style>            
 </head>
 <body>

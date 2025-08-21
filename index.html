@@ -283,7 +283,34 @@
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 20px var(--shadow-color);
-        }       
+        }
+        
+        .hero-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .hero-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--bg-secondary);
+            border-radius: 50%;
+            color: var(--accent-1);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .hero-social a:hover {
+            background: var(--accent-1);
+            color: var(--bg-primary);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px var(--shadow-color);
+        }        
     </style>            
 </head>
 <body>

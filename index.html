@@ -402,6 +402,37 @@
             font-weight: bold;
             color: var(--text-primary);
         }
+
+        /* Seção O Que Eu Faço */
+        .services {
+            padding: 100px 50px;
+            background: var(--bg-secondary);
+        }
+
+        .services-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px var(--shadow-color);
+            border-color: var(--accent-1);
+        }
+        
+
     </style>            
 </head>
 <body>
